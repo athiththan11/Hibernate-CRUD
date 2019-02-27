@@ -36,6 +36,9 @@ public class HibernateUtil {
                  * 
                  * ! replace your credentials and connection properties before running
                  */
+
+                // #region Method 01
+
                 Properties properties = new Properties();
                 properties.put(Environment.DRIVER, "<DRIVER>"); // if you are using PostgreSQL then it should be =>
                                                                 // org.postgresql.Driver
@@ -49,6 +52,17 @@ public class HibernateUtil {
 
                 configuration.setProperties(properties);
                 configuration.addAnnotatedClass(Student.class);
+
+                // #endregion
+
+                // Method 02: uncomment the following section and comment the above section to
+                // use the hibernate.cfg.xml
+
+                // #region Method 02
+
+                // configuration.configure("hibernate.cfg.xml");
+
+                // #endregion
 
                 ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
                         .applySettings(configuration.getProperties()).build();
