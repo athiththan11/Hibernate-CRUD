@@ -16,6 +16,17 @@ and deploy it in your favourite application server.
 
 ## API Endpoints
 
--   GET [/api/students](http://localhost:8080/hibernate/api/students) : to retrieve all students
+-   GET [/api/students](http://localhost:8080/hibernate/api/students) : to read all students
+-   POST [/api/students](http://localhost:8080/hibernate/api/students) : to save a student object.
+
+    The request should sent the body in `application/json` format as follows
+
+    ```json
+    {
+        "name": "Github",
+        "username": "github",
+        "email": "hub@git.com"
+    }
+    ```
 
 [:construction: WIP] other CRUD operations and relevant API endpoints will be updated soon.
