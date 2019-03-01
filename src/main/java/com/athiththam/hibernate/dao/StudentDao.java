@@ -24,4 +24,35 @@ public class StudentDao {
         }
     }
 
+    /**
+     * data access service to save a student object on postgreSQL using hibernate
+     * 
+     * @return true if saved; false if any exception occured
+     */
+    public boolean saveStudent(Student student) {
+
+        boolean saved = true;
+        Session session = null;
+        try {
+
+            session = HibernateUtil.getSessionFactory().openSession();
+
+            session.beginTransaction();
+            session.save(student);
+            session.getTransaction().commit();
+        } catch (Exception e) {
+            if (session.getTransaction() != null) {
+                session.getTransaction().rollback();
+            }
+
+            saved = false;
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+
+        return saved;
+    }
+
 }

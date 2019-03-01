@@ -29,6 +29,13 @@ public class Student implements Serializable {
         // empty constructor
     }
 
+    public Student(int id, String name, String username, String email) {
+        this.setId(id);
+        this.setName(name);
+        this.setUsername(username);
+        this.setEmail(email);
+    }
+
     // parameterized constructor
     public Student(String name, String username, String email) {
         this.setName(name);
