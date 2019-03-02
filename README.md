@@ -2,6 +2,8 @@
 
 A simple student CRUD Application with Hibernate and PostgreSQL (hosted on [ElephantSQL](https://www.elephantsql.com/))
 
+Checkout the live demo [Deployed on Heroku](https://hibernate-crud.herokuapp.com)
+
 ## Usage
 
 Clone or download the application and replace the configuration and connection properties.
