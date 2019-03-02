@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Hibernate CRUD</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <script src="https://unpkg.com/feather-icons"></script>
+    </head>
+    <body>
+        <div class="container mx-auto align-self-center">
+            <div class="row mt-5">
+                <div class="col">
+                    <h1 class="display-4">Hibernate CRUD</h1>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <p class="lead">
+                        A Simple CRUD Application developed using Hibernate and PostgreSQL
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <h4>API Endpoints</h4>
+                    <p class="text-muted">
+                        You can use the following exposed API endpoints to use and experiment on<br />
+                        CRUD operations
+                    </p>
+                    <ul class="text-secondary">
+                        <li>
+                            <span>[GET] </span>
+                            <a class="" href="/api/students" target="_blank">/api/students</a>
+                            <span> : to read all student objects</span>
+                        </li>
+                        <li>
+                            <span>[GET] </span>
+                            <a class="" href="/api/students/4" target="_blank">/api/students/{id}</a>
+                            <span> : to read a particular student object</span>
+                        </li>
+                        <li>
+                            <span>[POST] </span>
+                            <a class="" href="#">/api/students</a>
+                            <span> : to save a student object</span>
+                        </li>
+                        <li>
+                            <span>[PUT] </span>
+                            <a class="" href="#">/api/students/{id}</a>
+                            <span> : to update a student object</span>
+                        </li>
+                        <li>
+                            <span>[DELETE] </span>
+                            <a class="" href="#">/api/students/{id}</a>
+                            <span> : to delete a student object</span>
+                        </li>
+                    </ul>
+                    <p class="lead text-secondary">
+                        For further detailed description, use the below link
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col">
+                    <a
+                        class="text-muted disabled"
+                        href="https://github.com/athiththan11/Hibernate-CRUD"
+                        target="_blank"
+                    >
+                        <i data-feather="github"></i>
+                        Github Repo
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <script>
+            feather.replace();
+        </script>
+    </body>
+</html>
