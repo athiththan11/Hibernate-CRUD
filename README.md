@@ -17,9 +17,10 @@ and deploy it in your favourite application server.
 ## API Endpoints
 
 -   GET [/api/students](http://localhost:8080/hibernate/api/students) : to read all students
--   POST [/api/students](http://localhost:8080/hibernate/api/students) : to save a student object.
+-   GET [/api/students/{id}](http://localhost:8080/hibernate/api/students/4) : to read a particular student object
+-   POST [/api/students](http://localhost:8080/hibernate/api/students) : to save a student object
 
-    The request should sent the body in `application/json` format as follows
+    The request should send a body in `application/json` format as follows
 
     ```json
     {
@@ -29,4 +30,16 @@ and deploy it in your favourite application server.
     }
     ```
 
-[:construction: WIP] other CRUD operations and relevant API endpoints will be updated soon.
+-   PUT [/api/students/{id}](http://localhost:8080/hibernate/api/students/4) : to update a student object
+
+    The request should send a body in `application/json` format as follows
+
+    ```json
+    {
+        "name": "Github Microsoft",
+        "username": "github",
+        "email": "hub@git.com"
+    }
+    ```
+
+-   DELETE [/api/students/{id}](http://localhost:8080/hibernate/api/students/5) : to delete a student object
